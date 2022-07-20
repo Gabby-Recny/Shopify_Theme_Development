@@ -1,3 +1,5 @@
+{{ 'component-feature-call-to-action.css' | asset_url | stylesheet_tag }}
+
 <section class="feature-call-to-action-container">
     <img class="feature-call-to-action-icon" src="https://www.fillmurray.com/150/150" alt="Bill Murray placeholder img"/>
     <h4 class="feature-call-to-action-text">Lorem Ipsum</h4>
@@ -11,17 +13,21 @@
 	"name": "Feature Call To Action",
 	"tag": "section",
 	"class": "feature-call-to-action",
-    "settings": [
-    {
-      "type": "text",
-      "id": "callToActionSection",
-      "label": "Feature Call To Action"
-    }
-  ],
-	"limit": 1,
+	"settings": [
+        {
+            "type": "image_picker",
+            "id": "featureImage",
+            "label": "Feature Image"
+        },
+        {
+            "type": "url",
+            "id": "linkurl",
+            "label": "Call to Action Button"
+        }
+	],
 	"blocks": [{
 			"name": "Icon",
-			"type": "icon",
+			"type": "image_picker",
 			"settings": [{
 				"type": "image_picker",
 				"id": "icon",
@@ -29,29 +35,28 @@
 			}]
 		},
 		{
-			"name": "Text",
+			"name": "Title",
 			"type": "text",
 			"settings": [{
 				"type": "text",
-				"id": "text",
-				"label": "text"
+				"id": "titleText",
+				"label": "title"
 			}]
-
 		},
-		{
-			"name": "Feature Image",
-			"type": "image",
+        {
+			"name": "Subtitle",
+			"type": "subtitle",
 			"settings": [{
-				"type": "image_picker",
-				"id": "image",
-				"label": "image"
+				"type": "text",
+				"id": "subtitleText",
+				"label": "subtitle"
 			}]
-		},
-		{
-			"name": "Call to Action Button",
-			"type": "button"
 		}
 	],
+	"presets": [{
+		"name": "Feature Call To Action",
+		"category": "Call To Action"
+	}],
 	"locales": {
 		"en": {
 			"title": "Feature Call to Action"
