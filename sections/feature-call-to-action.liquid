@@ -12,19 +12,33 @@
 	"tag": "section",
 	"class": "feature-call-to-action",
 	"limit": 1,
-	"blocks": [
-        {
+	"blocks": [{
 			"name": "Icon",
-			"type": "icon"
+			"type": "icon",
+			"settings": [{
+				"type": "image_picker",
+				"id": "icon",
+				"label": "Icon"
+			}]
 		},
 		{
 			"name": "Text",
-			"type": "text"
+			"type": "text",
+			"settings": [{
+				"type": "text",
+				"id": "text",
+				"label": "text"
+			}]
 
 		},
 		{
 			"name": "Feature Image",
-			"type": "image"
+			"type": "image",
+			"settings": [{
+				"type": "image_picker",
+				"id": "image",
+				"label": "image"
+			}]
 		},
 		{
 			"name": "Call to Action Button",
@@ -32,9 +46,9 @@
 		}
 	],
 	"locales": {
-			"en": {
-                "title": "Feature Call to Action"
-            }
+		"en": {
+			"title": "Feature Call to Action"
+		}
 	}
 }
 
