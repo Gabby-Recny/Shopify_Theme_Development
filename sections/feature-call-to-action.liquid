@@ -1,6 +1,41 @@
-<section class="feature-call-to-action-container"
-    <img class="feature-call-to-action-logo" src="https://via.placeholder.com/150/0000FF/808080" alt="Plain blue tile to placehold an image"/>
+<section class="feature-call-to-action-container">
+    <img class="feature-call-to-action-icon" src="https://www.fillmurray.com/150/150" alt="Bill Murray placeholder img"/>
     <h4 class="feature-call-to-action-text">Lorem Ipsum</h4>
     <img class="feature-call-to-action-img" src="https://www.fillmurray.com/640/360" alt="Bill Murray placeholder img"/>
     <button class="feature-call-to-action-btn">Buy Me Now</button>
 </section>
+
+{% schema %}
+
+{
+	"name": "Feature Call To Action",
+	"tag": "section",
+	"class": "feature-call-to-action",
+	"limit": 1,
+	"blocks": [
+        {
+			"name": "Icon",
+			"type": "icon"
+		},
+		{
+			"name": "Text",
+			"type": "text"
+
+		},
+		{
+			"name": "Feature Image",
+			"type": "image"
+		},
+		{
+			"name": "Call to Action Button",
+			"type": "button"
+		}
+	],
+	"locales": {
+		"language": {
+			"translation_key": "translation_value"
+		}
+	}
+}
+
+{% endschema %}
