@@ -16,19 +16,11 @@
                 <h3>{{block.settings.titleText}}</h3>
             </article>
 
-            {% when 'subtitle-text' %}
-            <article class="subtitle-text" {{block.shopify_attributes}}>
-                <p>{{block.settings.subtitleText}}</p>
-            </article>
-
         {% endcase %}
     {% endfor %}
 
 
 
-
-    <!-- <img class="feature-call-to-action-icon" src="{{ product.featured_image | img_url: '150x150' }} "alt="Bill Murray placeholder img"/> -->
-    <h4 class="feature-call-to-action-text">Lorem Ipsum</h4>
     <img class="feature-call-to-action-img" src="{{ product.featured_image | img_url: '980x438' }}" alt="Image of featured product."/>
     <button class="feature-call-to-action-btn">Call to Action</button>
 </section>
@@ -67,15 +59,6 @@
 				"type": "text",
 				"id": "titleText",
 				"label": "title"
-			}]
-		},
-        {
-			"name": "Subtitle",
-			"type": "subtitle-text",
-			"settings": [{
-				"type": "text",
-				"id": "subtitleText",
-				"label": "subtitle"
 			}]
 		}
 	],
