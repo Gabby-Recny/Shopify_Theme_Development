@@ -39,6 +39,19 @@
     margin-bottom: 80px;
 }
 
+.feature-call-to-action-img-wrapper > img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.feature-call-to-action-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(98,77,127);
+    transition: 0.3s;
+}
+
 .title-text-wrapper > h3 {
     text-transform: uppercase;
     font-weight: bold; 
