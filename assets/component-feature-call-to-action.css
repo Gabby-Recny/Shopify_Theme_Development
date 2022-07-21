@@ -44,12 +44,16 @@
 }
 
 @media (max-width: 480px) {
+    .feature-call-to-action-container {
+        margin: 0 35px;
+    }
     .feature-call-to-action-img-wrapper {
         margin: 25px 0;
     }
     .feature-call-to-action-img-wrapper > img {
         height: 289px;
         width: 245px;
+        
     }
     .feature-call-to-action-btn {
         width: 240px;
