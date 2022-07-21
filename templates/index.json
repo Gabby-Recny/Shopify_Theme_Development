@@ -1,31 +1,5 @@
 {
   "sections": {
-    "16584284912c8eecd4": {
-      "type": "feature-call-to-action",
-      "blocks": {
-        "0a9160d0-f01a-4680-a40e-31d1817acfdd": {
-          "type": "image_picker",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/f825844d-bf77-4e22-a6de-804ee4df6da8_2.4062225568c94e0dde98d6de2dbbafe3.jpg"
-          }
-        },
-        "69e68be1-a97f-412b-a67c-fa50797db128": {
-          "type": "title-text",
-          "settings": {
-            "title-text": "this is a strawberry cutter it cuts strawberries look look look"
-          }
-        }
-      },
-      "block_order": [
-        "0a9160d0-f01a-4680-a40e-31d1817acfdd",
-        "69e68be1-a97f-412b-a67c-fa50797db128"
-      ],
-      "settings": {
-        "feature-image": "shopify:\/\/shop_images\/f825844d-bf77-4e22-a6de-804ee4df6da8_2.4062225568c94e0dde98d6de2dbbafe3.jpg",
-        "linkurl": "shopify:\/\/collections",
-        "btn-text": "shop collections"
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -124,6 +98,32 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "16584284912c8eecd4": {
+      "type": "feature-call-to-action",
+      "blocks": {
+        "0a9160d0-f01a-4680-a40e-31d1817acfdd": {
+          "type": "image_picker",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/f825844d-bf77-4e22-a6de-804ee4df6da8_2.4062225568c94e0dde98d6de2dbbafe3.jpg"
+          }
+        },
+        "69e68be1-a97f-412b-a67c-fa50797db128": {
+          "type": "title-text",
+          "settings": {
+            "title-text": "this is a strawberry cutter it cuts strawberries look look look"
+          }
+        }
+      },
+      "block_order": [
+        "0a9160d0-f01a-4680-a40e-31d1817acfdd",
+        "69e68be1-a97f-412b-a67c-fa50797db128"
+      ],
+      "settings": {
+        "feature-image": "shopify:\/\/shop_images\/f825844d-bf77-4e22-a6de-804ee4df6da8_2.4062225568c94e0dde98d6de2dbbafe3.jpg",
+        "linkurl": "shopify:\/\/collections",
+        "btn-text": "shop collections"
       }
     },
     "rich_text": {
@@ -236,9 +236,9 @@
     }
   },
   "order": [
-    "16584284912c8eecd4",
     "image_banner",
     "multicolumn",
+    "16584284912c8eecd4",
     "rich_text",
     "featured_collection",
     "collage",
