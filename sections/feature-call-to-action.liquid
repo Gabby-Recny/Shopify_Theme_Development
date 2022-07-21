@@ -22,7 +22,9 @@
 
 
     <img class="feature-call-to-action-img" src={{ section.settings.feature-image | img_url: '980x438' }} alt={{ section.settings.feature-image.alt }}/>
-    <button class="feature-call-to-action-btn">{{ section.settings.linkurl }}</button>
+    <div class="feature-call-to-action-btn-wrapper">
+        <button class="feature-call-to-action-btn">{{ section.settings.linkurl }}</button>
+    </div>
 </section>
 
 {% schema %}
