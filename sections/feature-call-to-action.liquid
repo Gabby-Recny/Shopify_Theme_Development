@@ -1,10 +1,36 @@
 {{ 'component-feature-call-to-action.css' | asset_url | stylesheet_tag }}
 
 <section class="feature-call-to-action-container">
-    <img class="feature-call-to-action-icon" src="https://www.fillmurray.com/150/150" alt="Bill Murray placeholder img"/>
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'image_picker' %}
+            <article class="image_picker" {{block.shopify_attributes}}>
+                <img 
+                    class="feature-call-to-action-icon" 
+                    src={{ product.icon | img_url: '150x150' }} 
+                    />
+            </article>
+
+            {% when 'subtitle-text' %}
+            <article class="subtitle-text" {{block.shopify_attributes}}>
+                <p>{{block.settings.subtitleText}}</p>
+            </article>
+
+            {% when 'title-text' %}
+            <article class="title-text" {{block.shopify_attributes}}>
+                <p>{block.settings.titleText}</p>
+            </article>
+            
+        {% endcase %}
+    {% endfor %}
+
+
+
+
+    <!-- <img class="feature-call-to-action-icon" src="{{ product.featured_image | img_url: '150x150' }} "alt="Bill Murray placeholder img"/> -->
     <h4 class="feature-call-to-action-text">Lorem Ipsum</h4>
-    <img class="feature-call-to-action-img" src="https://www.fillmurray.com/640/360" alt="Bill Murray placeholder img"/>
-    <button class="feature-call-to-action-btn">Buy Me Now</button>
+    <img class="feature-call-to-action-img" src="{{ product.featured_image | img_url: '980x438' }}" alt="Image of featured product."/>
+    <button class="feature-call-to-action-btn">Call to Action</button>
 </section>
 
 {% schema %}
@@ -36,7 +62,7 @@
 		},
 		{
 			"name": "Title",
-			"type": "text",
+			"type": "title-text",
 			"settings": [{
 				"type": "text",
 				"id": "titleText",
@@ -45,7 +71,7 @@
 		},
         {
 			"name": "Subtitle",
-			"type": "subtitle",
+			"type": "subtitle-text",
 			"settings": [{
 				"type": "text",
 				"id": "subtitleText",
