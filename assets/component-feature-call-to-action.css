@@ -38,7 +38,7 @@
     font-weight: bold;
 }
 
-.title-text {
+.title-text-wrapper > h3 {
     text-transform: uppercase;
     font-weight: bold; 
 }
