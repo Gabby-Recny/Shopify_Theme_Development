@@ -23,6 +23,13 @@
     opacity: 1;
 }
 
+.feature-call-to-action-img-wrapper > img:hover,
+.feature-call-to-action-img-wrapper > img:focus {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+
 .feature-call-to-action-btn-wrapper,
 .feature-call-to-action-img-wrapper {
     display: flex;
