@@ -21,9 +21,9 @@
 
 
     <!-- <article  {{block.shopify_attributes}}> -->
-        <img class="feature-call-to-action-img" src={{ block.settings.feature-image | img_url: '980x438' }} alt="Image of featured product."/>
+        <img class="feature-call-to-action-img" src={{ section.settings.feature-image | img_url: '980x438' }} alt="Image of featured product."/>
     <!-- </article> -->
-    <button class="feature-call-to-action-btn">Call to Action</button>
+    <button class="feature-call-to-action-btn">{{ section.settings.linkurl }}</button>
 </section>
 
 {% schema %}
