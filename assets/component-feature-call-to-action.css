@@ -50,14 +50,9 @@
     /* .feature-call-to-action-img-wrapper > img {
         height: 289px;
         width: 245px;
-    }
+    } */
     .feature-call-to-action-btn {
         width: 240px;
         height: 50px;
-        color: rgb(98,77,127);
-        background-color: white;
-        border: 2px rgb(98,77,127) solid;
-        text-transform: uppercase;
-        font-weight: bold;
-    } */
+    }
 }
