@@ -11,16 +11,16 @@
                     />
             </article>
 
+            {% when 'title-text' %}
+            <article class="title-text" {{block.shopify_attributes}}>
+                <h3>{{block.settings.titleText}}</h3>
+            </article>
+
             {% when 'subtitle-text' %}
             <article class="subtitle-text" {{block.shopify_attributes}}>
                 <p>{{block.settings.subtitleText}}</p>
             </article>
 
-            {% when 'title-text' %}
-            <article class="title-text" {{block.shopify_attributes}}>
-                <p>{block.settings.titleText}</p>
-            </article>
-            
         {% endcase %}
     {% endfor %}
 
