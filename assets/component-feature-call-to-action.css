@@ -20,7 +20,15 @@
 .feature-call-to-action-img-wrapper > img {
     height: 438px;
     width: 980px;
+    opacity: 1;
 }
+
+.feature-call-to-action-img-wrapper > img:hover,
+.feature-call-to-action-img-wrapper > img:focus {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 
 .feature-call-to-action-btn-wrapper,
 .feature-call-to-action-img-wrapper {
@@ -36,6 +44,14 @@
     border: 2px rgb(98,77,127) solid;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.feature-call-to-action-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(98,77,127);
+    transition: 0.3s;
 }
 
 .title-text-wrapper > h3 {
@@ -58,5 +74,6 @@
     .feature-call-to-action-btn {
         width: 240px;
         height: 50px;
+        margin-bottom: 40px;
     }
 }
