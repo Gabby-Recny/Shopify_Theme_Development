@@ -14,9 +14,12 @@
 
 .feature-call-to-action-img {
     margin: 15px 0;
+    height: 438px;
+    width: 980px;
 }
 
-.feature-call-to-action-btn-wrapper {
+.feature-call-to-action-btn-wrapper,
+.feature-call-to-action-img-wrapper {
     display: flex;
     justify-content: center;
 }
