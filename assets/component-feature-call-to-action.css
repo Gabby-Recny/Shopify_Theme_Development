@@ -35,5 +35,11 @@
     background-color: white;
     border: 2px rgb(98,77,127) solid;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title-text {
+    text-transform: uppercase;
+    font-weight: bold; 
 }
 
