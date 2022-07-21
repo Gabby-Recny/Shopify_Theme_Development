@@ -15,3 +15,18 @@
 .feature-call-to-action-img {
     margin: 15px 0;
 }
+
+.feature-call-to-action-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-call-to-action-btn {
+    width: 210px;
+    height: 50px;
+    color: rgb(98,77,127);
+    border-color: rgb(98,77,127);
+    border: 2px;
+    text-transform: uppercase;
+}
+
