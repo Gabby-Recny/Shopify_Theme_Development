@@ -8,6 +8,7 @@
                 <img 
                     class="feature-call-to-action-icon" 
                     src={{ block.settings.icon | img_url: '150x150' }} 
+                    alt={{  blocking.settings.icon.alt }}
                     />
             </article>
 
@@ -21,7 +22,7 @@
 
 
     <!-- <article  {{block.shopify_attributes}}> -->
-        <img class="feature-call-to-action-img" src={{ section.settings.feature-image | img_url: '980x438' }} alt="Image of featured product."/>
+        <img class="feature-call-to-action-img" src={{ section.settings.feature-image | img_url: '980x438' }} alt={{ section.settings.feature-image.alt }}/>
     <!-- </article> -->
     <button class="feature-call-to-action-btn">{{ section.settings.linkurl }}</button>
 </section>
