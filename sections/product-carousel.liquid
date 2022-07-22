@@ -2,11 +2,11 @@
 
 <section class="carousel-section">
     {% for block in section.blocks %}
-        <article class="carousel-container"{{block.shopify.attributes}}>
+        <article class="carousel-container" {{block.shopify.attributes}} >
             <img 
             class="carousel-img"
-            src={{ block.settings.carousel_image | img_url: 'IMG SIZE HERE'}}
-            alt={{ block.settings.carousel-image.alt}}
+            src={{ block.settings.carousel_image | img_url: 'x315'}}
+            alt={{ block.settings.carousel-image.alt }}
             />
             <h3>{{ block.settings.carousel_title }}</h3>
             <h5>{{  block.settings.carousel_subtitle }}</h5>
