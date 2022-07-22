@@ -20,7 +20,9 @@
     height: 57px;
     text-transform: uppercase;
     font-weight: bold;
-    color: white;
+    font-family: serif;
+    color: rgb(84,62,100);
+    background-color: none;
     border: none;
 }
 
@@ -42,7 +44,6 @@
 @media (min-width: 769px) {
     .container {
         position: relative;
-        width: 100%;
     }
 
     .background-image {
@@ -63,7 +64,6 @@
         flex-direction: row;
         gap: 30px;
         margin: 45px 70px;
-        box-sizing: border-box;
         width: 100%;
     }
 
