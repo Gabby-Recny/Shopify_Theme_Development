@@ -71,6 +71,8 @@
         box-sizing: border-box;
         max-width: 400px;
         margin-top: 45px;
+        display: flex;
+        align-items: flex-start;
     }
 
     .carousel-img {
