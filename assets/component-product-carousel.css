@@ -13,5 +13,13 @@
 .carousel-btn {
     width: 250px;
     height: 57px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
