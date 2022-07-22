@@ -1,20 +1,32 @@
+{% comment %} background image
+images overlaid on top of background image with title, subtitle and CTA below
+
+ {% endcomment %}
+
 {{ 'component-product-carousel.css' | asset_url | stylesheet_tag }}
 
-<section class="carousel-section" data-flickity='{ "wrapAround": true, "watchCSS": true  }'>
-    {% for block in section.blocks %}
-			<article class="carousel-container main-carousel" {{ block.shopify.attributes }} >
-				<img 
-					class="carousel-img"
-					src={{ block.settings.carousel_image | img_url: 'x315'}}
-					alt={{ block.settings.carousel-image.alt }}
-				/>
-				<h3>{{ block.settings.carousel_title }}</h3>
-				<h4>{{ block.settings.carousel_subtitle }}</h4>
-				<form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
-					<button class="carousel-btn" type="submit">{{ block.settings.btn-text }}</button>
-				</form>
-			</article>
-    {% endfor %}
+<section class="container">
+	<img
+		class="background-image"
+		src={{ section.settings.desktop-background-image | image_url: 'x438' }}
+		alt={{ section.settings.desktop-background-image.alt }}
+	/>
+	<section class="carousel-section" data-flickity='{ "wrapAround": true, "watchCSS": true  }'>
+		{% for block in section.blocks %}
+				<article class="cards" {{ block.shopify.attributes }} >
+					<img 
+						class="carousel-img"
+						src={{ block.settings.carousel_image | img_url: 'x315'}}
+						alt={{ block.settings.carousel-image.alt }}
+					/>
+					<h3>{{ block.settings.carousel_title }}</h3>
+					<h4>{{ block.settings.carousel_subtitle }}</h4>
+					<form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
+						<button class="carousel-btn" type="submit">{{ block.settings.btn-text }}</button>
+					</form>
+				</article>
+		{% endfor %}
+	</section>
 </section>
 
 
@@ -22,12 +34,19 @@
 {
 	"name": "Product Carousel",
 	"tag": "section",
-	"settings": [{
-		"type": "text",
-		"id": "product-carousel",
-		"label": "Product Carousel"
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "desktop-background-image",
+			"label": "Desktop Background Image"
+		},
+		{
+			"type": "text",
+			"id": "product-carousel",
+			"label": "Product Carousel"
 
-	}],
+		}
+	],
 	"max_blocks": 3,
 	"blocks": [{
 		"name": "Carousel Block",
