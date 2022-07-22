@@ -1,21 +1,22 @@
 {{ 'component-product-carousel.css' | asset_url | stylesheet_tag }}
 
-<section class="carousel-section">
+<section class="carousel-section" data-flickity='{ "wrapAround": true, "watchCSS": true  }'>
     {% for block in section.blocks %}
-        <article class="carousel-container" {{block.shopify.attributes}} >
-            <img 
-            class="carousel-img"
-            src={{ block.settings.carousel_image | img_url: 'x315'}}
-            alt={{ block.settings.carousel-image.alt }}
-            />
-            <h3>{{ block.settings.carousel_title }}</h3>
-            <h4>{{ block.settings.carousel_subtitle }}</h4>
-            <form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
-                <button class="carousel-btn" type="submit">{{ block.settings.btntext }}</button>
-            </form>
-        </article>
+			<article class="carousel-container main-carousel" {{ block.shopify.attributes }} >
+				<img 
+					class="carousel-img"
+					src={{ block.settings.carousel_image | img_url: 'x315'}}
+					alt={{ block.settings.carousel-image.alt }}
+				/>
+				<h3>{{ block.settings.carousel_title }}</h3>
+				<h4>{{ block.settings.carousel_subtitle }}</h4>
+				<form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
+					<button class="carousel-btn" type="submit">{{ block.settings.btn-text }}</button>
+				</form>
+			</article>
     {% endfor %}
 </section>
+
 
 {% schema %}
 {
