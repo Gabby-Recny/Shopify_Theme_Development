@@ -31,4 +31,15 @@
     transition: 0.3s;
 }
 
+.carousel-section::after {
+    content: 'flickity';
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .carousel-section::after {
+        content: '';
+    }
+
+}
 
