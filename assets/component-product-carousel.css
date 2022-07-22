@@ -53,8 +53,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: black;
         z-index: -1;
+        margin: 0;
+        padding: 0;
     }
 
     .carousel-section {
@@ -63,13 +64,13 @@
         align-items: center;
         flex-direction: row;
         gap: 30px;
-        margin: 45px 70px;
         width: 100%;
     }
 
     .cards {
         box-sizing: border-box;
         max-width: 400px;
+        margin-top: 45px;
     }
 
     .carousel-img {
