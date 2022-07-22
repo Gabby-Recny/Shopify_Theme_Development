@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.carousel-container > h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .carousel-img {
     width: 100vw;
     height: 315px;   
@@ -15,6 +20,9 @@
     height: 57px;
     text-transform: uppercase;
     font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 .carousel-btn:hover,
@@ -22,4 +30,5 @@
     opacity: 0.8;
     transition: 0.3s;
 }
+
 
