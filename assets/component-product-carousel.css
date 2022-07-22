@@ -24,6 +24,11 @@
     color: rgb(84,62,100);
     background-color: none;
     border: none;
+    font-size: large;
+}
+
+.carousel-btn::after {
+    content: ' --->'
 }
 
 .carousel-btn:hover,
