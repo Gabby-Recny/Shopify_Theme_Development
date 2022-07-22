@@ -6,6 +6,11 @@ images overlaid on top of background image with title, subtitle and CTA below
 {{ 'component-product-carousel.css' | asset_url | stylesheet_tag }}
 
 <section class="container">
+	<img
+		class="background-image"
+		src={{ section.settings.desktop-background-image | image_url: 'x438' }}
+		alt={{ section.settings.desktop-background-image.alt }}
+	/>
 	<section class="carousel-section" data-flickity='{ "wrapAround": true, "watchCSS": true  }'>
 		{% for block in section.blocks %}
 				<article class="carousel-container" {{ block.shopify.attributes }} >
@@ -22,11 +27,6 @@ images overlaid on top of background image with title, subtitle and CTA below
 				</article>
 		{% endfor %}
 	</section>
-	<img
-		class="background-image"
-		src={{ section.settings.desktop-background-image | image_url: 'x438' }}
-		alt={{ section.settings.desktop-background-image.alt }}
-	/>
 </section>
 
 
