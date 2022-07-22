@@ -41,14 +41,19 @@
 }
 
 @media (min-width: 769px) {
-    .carousel-section {
-        box-sizing: content-box;
-        padding: 1px;
-        margin: 45px 65px;
+    .background-image {
+        display: inline;
+        width: 100%;
+        height: 438px;
         position: relative;
+        z-index: 1;
+    }
+
+    .carousel-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        z-index: 2;
+        position: absolute;
     }
     .carousel-img {
         height: 460px;
@@ -59,15 +64,8 @@
         content: '';
     }
 
-    .background-image {
-        display: inline-block;
-        width: 100%;
-        height: 438px;
-        background-color: aqua;
-    }
-
     .carousel-container {
-        margin: 0 30px
+        margin: 0 30px;
     }
 
     .carousel-container:nth-child(even) {
