@@ -3,3 +3,15 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.carousel-img {
+    width: 100vw;
+    height: 315px;   
+}
+
+
+
+<form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
+<button class="carousel-btn" type="submit">{{ block.settings.btntext }}</button>
+</form>
+</article>
