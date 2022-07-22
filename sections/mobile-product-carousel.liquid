@@ -1,6 +1,6 @@
 <section class="carousel-container">
     {% for block in section.blocks %}
-    <div {{block.shopify.attributes}}>
+    <article {{block.shopify.attributes}}>
         <img 
         class="carousel-img"
         src={{ block.settings.carousel_image | img_url: 'IMG SIZE HERE'}}
@@ -11,7 +11,7 @@
         <form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
             <button class="carousel-btn" type="submit">{{ block.settings.btntext }}</button>
         </form>
-    </div>
+    </article>
 
 
     {% endfor %}
