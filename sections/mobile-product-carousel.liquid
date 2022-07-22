@@ -1,27 +1,20 @@
-{
-    Image,
-    Title,
-    Subtitle,
-    CTA Button,
-    Indicator buttons.
-}
-
-
-
-
-
-
 <section class="carousel-container">
-    <img 
+    {% for block in section.blocks %}
+    <div {{block.shopify.attributes}}>
+        <img 
         class="carousel-img"
-        src={{ section.settings.IMG-ID-HERE | img_url: 'IMG SIZE HERE'}}
-        alt={{ section.settings.IMG-ID-HERE.alt}}
-    />
-    <h3>{{ section.settings.TITLE-ID-HERE }}</h3>
-    <h5>{{  section.settings.SUBTITLE-ID-HERE }}</h5>
-    <form class="carousel-btn-wrapper" action={{ section.settings.LINK-ID-HERE }}>
-        <button class="carousel-btn" type="submit">{{ section.settings.BTN-ID-HERE }}</button>
-    </form>
+        src={{ block.settings.carousel_image | img_url: 'IMG SIZE HERE'}}
+        alt={{ block.settings.carousel-image.alt}}
+        />
+        <h3>{{ block.settings.carousel_title }}</h3>
+        <h5>{{  block.settings.carousel_subtitle }}</h5>
+        <form class="carousel-btn-wrapper" action={{ block.settings.linkurl }}>
+            <button class="carousel-btn" type="submit">{{ block.settings.btntext }}</button>
+        </form>
+    </div>
+
+
+    {% endfor %}
 
 </section>
 
@@ -46,12 +39,12 @@
 			},
 			{
 				"type": "text",
-				"id": "default_title",
+				"id": "carousel_title",
 				"label": "Title"
 			},
             {
 				"type": "text",
-				"id": "default_subtitle",
+				"id": "carousel_subtitle",
 				"label": "Subtitle"
 			},
             {
