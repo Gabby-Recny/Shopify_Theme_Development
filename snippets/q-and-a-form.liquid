@@ -2,8 +2,8 @@
     {% case block.type %}
       {% when 'text' %}
         <article class="q-and-a-wrapper snippet-text-color" {{block.shopify_attributes}}>
-          <h2>{{ block.settings.question }}</h2>
-          <p>{{ block.settings.answer }}</p>
+          <h2 class="custom-heading-color">{{ block.settings.question }}</h2>
+          <p class="snippet-text-color">{{ block.settings.answer }}</p>
         </article>
-      {% endcase %}
-    {% endfor %}
+    {% endcase %}
+{% endfor %}
