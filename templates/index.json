@@ -242,10 +242,17 @@
           "settings": {
             "icon": "shopify:\/\/shop_images\/download.jpg"
           }
+        },
+        "04530958-e8ea-4311-a18c-29be53dab8b7": {
+          "type": "title-text",
+          "settings": {
+            "title-text": "fruit cutters"
+          }
         }
       },
       "block_order": [
-        "725ec4bb-b6fa-4ac0-9afb-8905088ac5fb"
+        "725ec4bb-b6fa-4ac0-9afb-8905088ac5fb",
+        "04530958-e8ea-4311-a18c-29be53dab8b7"
       ],
       "settings": {
         "linkurl": "",
