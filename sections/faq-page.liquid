@@ -24,6 +24,17 @@
   <h1 class="main-page-title page-title h0">
     FAQ
   </h1>
+  
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text' %}
+        <article class="q-and-a-wrapper" {{block.shopify_attributes}}>
+          <h3>{{ block.settings.question }}</h3>
+          <p>{{ block.settings.answer }}</p>
+
+        </article>
+      {% endcase %}
+    {% endfor %}
   <div class="rte">
     {{ page.content }}
   </div>
@@ -64,15 +75,13 @@
 		"type": "text",
 		"settings": [{
 				"type": "text",
-				"id": "question-text",
-				"label": "question",
-				"placeholder": "What is your most frequently asked question?"
+				"id": "question",
+				"label": "Question"
 			},
 			{
 				"type": "text",
-				"id": "answer-text",
-				"label": "answer",
-				"placeholder": "This is the answer."
+				"id": "answer",
+				"label": "Answer"
 			}
 		]
 	}],
