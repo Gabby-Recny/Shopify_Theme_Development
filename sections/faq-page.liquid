@@ -16,6 +16,14 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+.snippet-text-color {
+  color: {{ section.settings.text-color }};
+}
+
+.custom-heading-color {
+  color: {{ section.settings.heading-color }};
+}
 {%- endstyle -%}
 
 
@@ -25,7 +33,7 @@
     FAQ
   </h1>
 
-  {% include 'q-and-a-form'%}
+  {% render 'q-and-a-form'%}
   
   <div class="rte">
     {{ page.content }}
@@ -60,6 +68,18 @@
 			"unit": "px",
 			"label": "t:sections.all.padding.padding_bottom",
 			"default": 36
+		},
+		{
+			"type": "color",
+			"id": "heading-color",
+			"label": "Heading Color",
+			"default": "#000000"
+		},
+		{
+			"type": "color",
+			"id": "text-color",
+			"label": "Text Color",
+			"default": "#000000"
 		}
 	],
 	"blocks": [{
@@ -90,3 +110,4 @@
 	"templates": ["page"]
 }
 {% endschema %}
+
