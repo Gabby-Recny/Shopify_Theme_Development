@@ -234,12 +234,22 @@
         "padding_bottom": 36
       }
     },
-    "165876034181377545": {
+    "1658762640f76ba2a1": {
       "type": "feature-call-to-action",
+      "blocks": {
+        "725ec4bb-b6fa-4ac0-9afb-8905088ac5fb": {
+          "type": "image_picker",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/download.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "725ec4bb-b6fa-4ac0-9afb-8905088ac5fb"
+      ],
       "settings": {
-        "feature-image": "shopify:\/\/shop_images\/download_1.jpg",
-        "linkurl": "shopify:\/\/blogs\/news",
-        "btn-text": "shop fruit cutters"
+        "linkurl": "",
+        "btn-text": "cta button"
       }
     }
   },
@@ -251,6 +261,6 @@
     "featured_collection",
     "collage",
     "video",
-    "165876034181377545"
+    "1658762640f76ba2a1"
   ]
 }
