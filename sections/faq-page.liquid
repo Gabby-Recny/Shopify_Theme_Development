@@ -24,16 +24,9 @@
   <h1 class="main-page-title page-title h0">
     FAQ
   </h1>
+
+  {% include 'q-and-a-form'%}
   
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'text' %}
-        <article class="q-and-a-wrapper" {{block.shopify_attributes}}>
-          <h2>{{ block.settings.question }}</h2>
-          <p>{{ block.settings.answer }}</p>
-        </article>
-      {% endcase %}
-    {% endfor %}
   <div class="rte">
     {{ page.content }}
   </div>
