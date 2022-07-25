@@ -255,7 +255,8 @@
         "04530958-e8ea-4311-a18c-29be53dab8b7"
       ],
       "settings": {
-        "linkurl": "",
+        "feature-image": "shopify:\/\/shop_images\/download_1.jpg",
+        "linkurl": "shopify:\/\/blogs\/news",
         "btn-text": "cta button"
       }
     }
